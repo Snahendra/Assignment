@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Snahendra Das Dtabase Example</title>
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        </head>
+
+        <body>
+                <div class="form-group" style="  position: fixed; top: 10%; bottom: 25%; left: 25%; right: 25%; border: 2px solid gainsboro;">
+                        <form onsubmit="onFormSubmit();">
+                                <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="f_name">
+
+                                </div>
+
+                                <div>
+                                        <label for="dob">DOB</label>
+                                        <input type="date" name="dob">
+                                </div>
+
+                                <div class="form-check"> 
+                                        <input class="form-check-input" type="radio" name="gender" value="male">
+                                        <label class="form-check-label" for="genderl">Male</label><br>
+
+                                        <input class="form-check-input" type="radio" name="gender" value="female">
+                                        <label class="form-check-label" for="gender">Female</label><br>
+
+                                        <input class="form-check-input" type="radio" name="gender" value="other">
+                                        <label class="form-check-label" for="gender">other</label>
+                                </div>
+
+                                <div class="dropdown">
+                                        <select class="dropdown-header" name="year_of_exp">
+                                                <option value="no_exp">NO Experience</option>
+                                                <option value="two_yeras">2 Years</option>
+                                                <option value="five_years">5 Years</option>
+                                                <option value="ten_years">10 Years</option>
+                                        </select>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="skillset" value="snahendra">
+                                        <label class="form-check-label" for="skillset">C</label>
+
+                                        <input class="form-check-input" type="checkbox" name="skillset" value="cpp">
+                                        <label class="form-check-label" for="skillset">C++</label>
+
+                                        <input class="form-check-input" type="checkbox" name="skillset" value="Java">
+                                        <label class="form-check-label" for="skillset">JAVA</label>
+
+                                </div>
+
+                                <div>
+                                        <label for="summery">Give a brief description about yourself</label></br>
+                                        <textarea class="form-control" name="summery" rows="5" cols="30">
+                                        </textarea>
+                                </div>
+
+                                <div>
+                                        <input type="submit" class="btn btn-secondary" value="Submit">
+                                </div>
+                                
+                        </form>
+                </div>
+
+
+
+
+
+
+                
+                <script src="javascript.js"></script>
+        </body>
+</html>
